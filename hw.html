@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glass Login</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#50ce72,#aab23e);
+    overflow:hidden;
+}
+
+/* Background circles */
+.circle1,.circle2{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(3px);
+}
+
+.circle1{
+    width:180px;
+    height:180px;
+    background:pink;
+    left:80px;
+    top:120px;
+}
+
+.circle2{
+    width:120px;
+    height:120px;
+    background:#ffffcc;
+    right:100px;
+    bottom:100px;
+}
+
+/* Login Box */
+.login{
+    width:320px;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.3);
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+h2{
+    color:white;
+    margin-bottom:8px;
+}
+
+p{
+    color:white;
+    font-size:13px;
+    margin-bottom:15px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border:none;
+    border-radius:5px;
+    outline:none;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border:none;
+    border-radius:5px;
+    background:#ffd966;
+    cursor:pointer;
+}
+
+a{
+    display:block;
+    margin-top:12px;
+    color:white;
+    text-decoration:none;
+    font-size:13px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="circle1"></div>
+<div class="circle2"></div>
+
+<div class="login">
+    <h2>Welcome Back</h2>
+    <p>Login to continue</p>
+
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+
+    <button>Login</button>
+
+    <a href="#">Forgot Password?</a>
+</div>
+
+</body>
+</html>
